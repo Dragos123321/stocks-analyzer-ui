@@ -1,0 +1,34 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Palette #1: navy & teal – applied when Mantine dark scheme is active */
+[data-mantine-color-scheme='dark'] {
+  --app-bg: #0f172a;
+  --app-surface: #1e293b;
+  --app-text: #f8fafc;
+  --app-muted: #94a3b8;
+  --app-border: #334155;
+  --app-accent: #2dd4bf;
+  --app-negative: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--app-bg, #0f172a);
+  color: var(--app-text, #f8fafc);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}

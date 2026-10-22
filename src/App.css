@@ -1,0 +1,77 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--app-border, #334155);
+  background: var(--app-surface, #1e293b);
+}
+
+.title-link {
+  display: inline-block;
+}
+.title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--app-text, #f8fafc);
+}
+
+.tagline {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: var(--app-muted, #94a3b8);
+}
+
+.main {
+  flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+.home-card {
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.home-card:hover {
+  border-color: var(--app-accent, #2dd4bf);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.insider-results {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Insider trades: buys = green tint, sells = red tint */
+.insider-row-buy {
+  --row-bg: rgba(34, 197, 94, 0.12);
+  background-color: var(--row-bg);
+}
+.insider-row-buy:hover {
+  background-color: rgba(34, 197, 94, 0.2);
+}
+
+.insider-row-sell {
+  --row-bg: rgba(248, 113, 113, 0.12);
+  background-color: var(--row-bg);
+}
+.insider-row-sell:hover {
+  background-color: rgba(248, 113, 113, 0.2);
+}
+
+.footer {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--app-muted, #94a3b8);
+  border-top: 1px solid var(--app-border, #334155);
+}
